@@ -1,34 +1,82 @@
 <head>
     <title>Chloe's Blog</title>
     <style>
-    body {
+    header {
         text-align: center;
-        background: url("assets/galaxy.jpeg");
+        background: url("assets/images/galaxy.jpeg");
         background-size: cover;
-        background-position: center;
         color: white;
         font-family: helvetica;
     }
-    p {
-        font-size: 22px;
-    }
-    input {
-        font-size: 18px;
-        padding: 10px;
-        border: 0;
-    }
-    input[type="submit"] {
-        background: red;
+    a {
         color: white;
     }
+    h1 {
+      font-size: 70px;
+    }
+    h2 {
+        text-align: center;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    width: 150px;
+    height: auto;
+    }
+      ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+        li {
+        padding: 5px;
+        display: block;
+      }
+    }
   </style>
-
 </head>
 <body>
-    <h1>Hi. I'm Chloe.</h1>
-    <image src="assets/nosepick.jpeg">
-    <p>This is where I document the things I am interested in </p>
-    <h3>Follow me! <input type="email" Placeholder="Your Email">
-    <input type="submit"></h3>
-
+     <header>
+    <img src="assets/images/chloe.jpeg">
+    <h1>Chloe's Blog</h1>
+    <ul>
+      <li><a href="http://www.chloedonegan.com">About Me</a></li>
+      <li><a href="http://www.eyedea.org.uk/author/chloe-donegan/">Other Writing</a></li>
+      <li><a href="http://www.dnaas.herokuapp.com">Something I built</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>App Facts</h2>
+    <p> Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. </p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>App Business Models</h2>
+    <p> Free. Paid. In app purchases. Subscription. Native Ad networks. Free. Paid. In app purchases. Subscription. Native Ad networks. Free. Paid. In app purchases. Subscription. Native Ad networks. Free. Paid. In app purchases. Subscription. Native Ad networks.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>How to increase the likelihood that your app will be a hit</h2>
+    <p>WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM</p>
+    <button>Like</button>
+  </article>
+    <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
 </body>
