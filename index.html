@@ -1,4 +1,8 @@
+<!DOCTYPE html>
 <head>
+    <link href="/assets/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
     <title>Chloe's Blog</title>
     <style>
     header {
@@ -7,55 +11,90 @@
         background-size: cover;
         background-position: center;
         color: white;
-        font-family: helvetica;
     }
+
+    body {
+      background-color: black;
+      font-family: 'Andika', sans-serif;
+
+    }
+    article {
+      background-color: white;
+      border-radius: 12px;
+      margin: 100px;
+      padding: 100px;
+    }
+
     .links {
         color: white;
-        font-family: helvetica;
+        font-family: 'Andika', sans-serif;
         font-size: 20px;
+        display: inline;
     }
+
+    .toplink {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+
     h1 {
-      font-size: 70px;
+      font-size: 200px;
+      font-family: 'Amatic SC', cursive;
+      margin: 0 auto;
     }
+
     h2 {
-        font-family: helvetica;
+        font-family: 'Andika', sans-serif;
     }
+
     .date {
       float:right;
     }
+
+    .balsamiq {
+      float:right;
+    }
+
     p {
-        font-family: helvetica;
         text-align: justify;
         line-height: 25px;
         padding: 10px;
     }
-    img {
+
+    #chloe {
       margin: 40px 0px 0px 0px;
       border: 7px solid white;
       border-radius: 20px;
       width: 150px;
       height: auto;
     }
+
+#mockup {
+  max-height: 100%;
+  max-width: 100%;
+
+}
+    #video{
+    display: block;
+    margin: auto
+    }
+
     dl {
       line-height: 30px;
       padding:10px;
-
       }
 
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
+    ol {
+      list-style-type: decimal;
     }
+
     li {
-      display: inline;
+      font-family: 'Andika', sans-serif;
       padding: 0px 10px 0px 10px;
       text-align: justify;
     }
-    article {
-      max-width: 500px;
-      padding: 20px;
-      margin: 0 auto;
-    }
+
+
     @media (max-width: 500px) {
       h1 {
         font-size: 36px;
@@ -70,46 +109,72 @@
 </head>
 <body>
      <header>
-    <img src="assets/images/chloe.jpeg">
+    <img id="chloe" src="assets/images/chloe.jpeg">
     <h1>Chloe's Blog</h1>
-    <ul >
-      <li><a class="links" href="http://www.chloedonegan.com">About Me</a></li>
-      <li><a  class="links"href="http://www.eyedea.org.uk/author/chloe-donegan/">Other Writing</a></li>
-      <li><a class="links" href="http://dnaas.herokuapp.com">Something I built</a></li>
+    <ul class="toplink">
+      <li class="links"><a href="http://www.chloedonegan.com">About Me</a></li>
+      <li class="links"><a href="http://www.eyedea.org.uk/author/chloe-donegan/">Other Writing</a></li>
+      <li class="links"><a href="http://dnaas.herokuapp.com">Something I built</a></li>
     </ul>
   </header>
   <article>
-    <h2>Fruity Marketing <span class="date">02.01.14</span> </h2>
-    <p> <a href="http://www.rebootwithjoe.com/thesundaytimes/">Joe Cross</a> gives away recipies and copies of his film " Fat Sick & Nearly Dead" for FREE. <br>Bananas? <br> There is method in his madness.</p>
-     <dl>
-        <dt>Step 1 </dt> <dd> Do a branded challenge, in his case "60 days consuming only juice" </dd> 
-        <dt>Step 2 </dt> <dd> Make a movie documenting what you learn and submit to film festivals </dd>
-        <dt>Step 3 </dt> <dd>Write a recipie book. Joe is now an authority on Juicing.</dd>
-        <dt>Step 4 </dt> <dd> Put toghether a website and install affiliate links partnering with blender manifactures </dd>
-        <dt>Step 5 </dt> <dd> Get a timely spread in the January edition The Sunday Times Style magazine (- distribution 10 million) talking about a "Juice Reboot" and advertising a link to the free copy of the film ( exclusively for readers in exchange for an email address)</dd>
-        <dt>Step 6 </dt> <dd> Sit back, sip juice , email your expanded distribution list about your new movie/ book / gym. </dd> 
-     </dl>
-     <p>Nuts.</p>
-    <button>Like</button>
+<h2><a href="http://www.chezjustin.com">Chezjustin.com</a><span class="date">03.01.14</span></h2> 
+<p>My Dad is a phenomenal chef. I want to make a website to house his recipes so I can recreate the magic when i'm not in Sussex. I also concocted this project because i'm interested in learning how to work with databases. I don't want to have to make individual html pages for each recipe so i'm going to need to make some of the pages <a href="http://en.wikipedia.org/wiki/Dynamic_web_page" alt="A dynamic web page is a web page with rendered web content that varies based on parameters">dynamic</a>. Currently I don't know whether its best to use Sinatra or Ruby and do I need Rails to make this come to life? I'm also not sure if I'll need to work with an external database (mongodb?) and whether there is a particular database which compliments Ruby.</p> 
+<h3>Product Spec</h3>
+  <ul>
+    <li> Submit a recipe</li>
+    <li> Upload a picture</li>
+    <li> Browse Recipes </li>
+    <li> Search for a Recipe </li>
+    <li> Recipe suggestions based on ingredients to hand </li> 
+  </ul>
+
+<br> <h3>Balsamiq Mockup<span class="balsamiq"><a href="http://bit.ly/1dgnoN9">Enlarge the mockup</a></span></h3>
+<a href="http://bit.ly/1dgnoN9"><img  id="mockup" src="assets/images/cjmockup.png"></a>  
+
+<p> I decided to mock up the site to make sure that I will ultimately get all the functionality I want and a layout that's easy to use. I know that when I start coding I think in terms of what I know how to do but the idea of the this project is to learn what I need as i go! From what I understand Interactive Designers use wireframes to come up with a structure that makes sense for a number of user journeys, thinking about tasks to be completed, navigation and the conversion funnel. Visual Designers then determine colours, the font & tweak the layout. I haven't thought about that yet. However I've just finished "Don't Make Me Think" by Steve Krug. This proffers that good design isn't about colours, font styles and sizes, it's about making websites that are intuitive (don't make them think!). Steve points out that beginners often create Websites assuming that the user will start on the homepage. However it's common for a user to arrive on a page in the middle of a site because they have followed a link from another site or found a page via a search engine. If a website is well designed a person should be able to answer the following questions no matter where they are in the site. </p>
+  <ol>
+      <li> What site is this? (Site ID)</li>
+      <li> What page am I on? (Page Name)</li>
+      <li> What are the major sections of the site? (Sections)</li>
+      <li> What are my options at this level? (Local Navigation)</li>
+      <li> Where am I in the scheme of things?</li>
+      <li> How can i search? </li>
+  </ol>
+<p> I tried to bear this is mind when I wireframed <a href="www.chezjustin.com">chezjustin.com</a> but if you can see ways that the design can obviously be improved, get in touch! <br><br> @iamchloedonegan
 </article>
-<article>
-    <h2>App Facts</h2>
-    <p> Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. Apps are hard. Proceed with caution. </p>
-    <button>Like</button>
-  </article>
   <article>
-    <h2>App Business Models</h2>
-    <p> Free. Paid. In app purchases. Subscription. Native Ad networks. Free. Paid. In app purchases. Subscription. Native Ad networks. Free. Paid. In app purchases. Subscription. Native Ad networks. Free. Paid. In app purchases. Subscription. Native Ad networks.</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>How to increase the likelihood that your app will be a hit</h2>
-    <p>WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM WOM</p>
-    <button>Like</button>
-  </article>
-    <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
-  </script>
+    <h2>Fruity Marketing <span class="date">02.01.14</span> </h2>
+    <p> <a href="http://www.rebootwithjoe.com/thesundaytimes/">Joe Cross</a> gives away juice recipies and copies of his film " Fat Sick & Nearly Dead" for FREE. <br>Bananas? <br> There's method in his madness.</p>
+     <dl>
+        <dt>Step 1 </dt> <dd> Do a branded challenge, in his case "60 days consuming only green fruit n' veg juice" </dd> 
+        <dt>Step 2 </dt> <dd> Make a film documenting what you learn and submit the movie to film festivals </dd>
+        <dt>Step 3 </dt> <dd>Write a recipe book. After completing the challenge Joe is now an authority on Juicing.</dd>
+        <dt>Step 4 </dt> <dd> Put together a website and install affiliate links partnering with blender manufactures </dd>
+        <dt>Step 5 </dt> <dd> Get a timely spread about detoxing in the January edition of the Sunday Times Style magazine (- distribution 10 million) .Talk about a "Juice Reboot" and advertising a link to the free copy of the film (exclusively for readers in exchange for an email address)</dd>
+        <dt>Step 6 </dt> <dd> Sit back, sip juice & email your massive distribution list about your next talk/ movie/ book / new gym. </dd> 
+     </dl>
+</article>
 </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46838737-1', 'chezjustin.com');
+  ga('send', 'pageview');
+
+</script>
+<!--<article>
+  <h2>Blog To Do List</h2>
+  <ol>
+  <li>Analytics</li>
+    <li>Is there a program that can Spell Check my html in sublime? (high priority)</li>
+    <li> Mailing list sign up</li>
+    <li> Enable comments </li>
+    <li>like a post - manually + on fb</li>
+    <li>tweet a post </li>
+</ol>
+ </article> 
+
