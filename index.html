@@ -2,7 +2,7 @@
 <head>
     <link href="/assets/normalize.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
+    
     <title>Chloe's Blog</title>
     <style>
     header {
@@ -15,7 +15,8 @@
 
     body {
       background-color: black;
-      font-family: 'Andika', sans-serif;
+      font-family: arial;
+
 
     }
     article {
@@ -27,7 +28,7 @@
 
     .links {
         color: white;
-        font-family: 'Andika', sans-serif;
+      
         font-size: 20px;
         display: inline;
     }
@@ -43,8 +44,17 @@
       margin: 0 auto;
     }
 
+    .maker {
+      font-size:80px;
+      text-align: center;
+    }
+
     h2 {
         font-family: 'Andika', sans-serif;
+    }
+
+    form {
+      display: inline
     }
 
     .date {
@@ -127,33 +137,56 @@ a:hover {
     <h1>Chloe's Blog</h1>
     <ul class="toplink">
       <li class="links"><a href="http://www.chloedonegan.com">About Me</a></li>
-      <li class="links"><a href="http://www.eyedea.org.uk/author/chloe-donegan/">Other Writing</a></li>
-      <li class="links"><a href="http://dnaas.herokuapp.com">Something I built</a></li>
+      <li class="links"><a href="http://www.eyedea.org.uk/author/chloe-donegan/">Older Posts</a></li>
     </ul>
   </header>
 <article>
-<h2>#skimlinkstomakers<span class="date">08.02.14</span></h2>
+<h2>Career Pivot<span class="date">08.02.14</span></h2>
 <p>
+  Whilst I was working on <a href="http://www.weaveuk.com/">Weave</a> we used <a href="">this</a> python script to email #LDNFashionBloggers en masse. The email they received made it appear as though we'd taken the time to contact them personally, resulting in a lot of feedback. I want to be able to write hacks like that myself!<br><br> 
+
+Currently my standard workday looks like this:<br><br>
+
+<img  id="mockup" src="assets/images/averageday.png"></a> 
+<br> 
+My mum is baffled by why I'd try to teach myself to code; <br><br>"Why do you want to spend the rest of your life behind a computer?" <br><br>
+
+Because I already do spend my life behind a computer! If I knew how to code it would transform my career and the relationship I have with technology going forward.<br><br> 
+
+With a solid foundation in web development I could quickly build  websites, applications and life hacks. I could automate every repetitive task I encounter. Id be able to create platforms that allow causes and products reach huge numbers of people. I could stop selling my time for money and instead start working on problems that I care about  <br><br>
+
+I don't want to spend the rest of my days sending emails...</p>
+
+<h1 class="maker">< h1 >I want to be a Maker < /h1></h1><br>
+
+<p>At the moment i'm in a death zone. Missing semi colons pose a serious threat to my development.Coding is a perishible skill and learning in a piecemeal way after work and at weekends is slow and painful, not to mention lonely. Spending <a href="http://www.makersacademy.com/"> 12 weeks </a> with expert tutors and other like minded people on a similar journey would change everything. <a href="https://twitter.com/search?src=typd&q=%23skimlinkstomakers">#SkimlinkstoMakers</a> - can you help? </P>
+
+
 </p> 
 </article>
+
 <article><h2>Something for Valentines Day<span class="date">02.02.14</span></h2>
-<p>Date Night as a Service - Like <a href="http://foaas.herokuapp.com/">FOAAS</a>, but much sweeter. 
-<form action="http://dnaas.herokuapp.com">
-    <input type="submit" value="Go">
+<p>Date Night as a Service - Like <a href="http://foaas.herokuapp.com/">FOAAS</a>, but much sweeter. <form action="http://dnaas.herokuapp.com">
+    <input type="submit" value="Show me">
 </form>
 </p> 
 </article>
 <article><h2>Blank Slate Challenge<span class="date">19.01.14</span></h2>
 <p>
-   I rely heavily on my <a href="http://www.codefirstgirls.org.uk/">CFG</a> notes, Stack Overflow and Google to hack things together so this week I've set myself the challenge of writing something completely from scratch.<br><br> 
+  <img  id="mockup" src="assets/images/wordcloud.png"></a> 
+<span class="date"><a href="http://ebookbrowsee.net/marc-andreessen-on-why-software-is-eating-the-world-pdf-d265803950">Why Software Is Eating The World</a> represented by a wordcloud </span>
+<br><br><br>
 
-I ended up with <a href=""> this</a> script that counts the number of times words appear in a txt.file.<br><br>
+   I usually rely heavily on my <a href="http://www.codefirstgirls.org.uk/">CFG</a> notes, Stack Overflow and Google to hack things together so this week I've set myself the challenge of writing something completely from scratch.<br><br> 
 
-Anyone familiar with Ruby will no doubt be appalled by my fugly code. In the end I didn't even use methods but... it works :)<br><br> 
+I ended up with <a href="https://github.com/csharpd/countwords/blob/master/wordcounter.rb"> this</a> script that counts the number of times words appear in a txt.file.<br><br>
 
-If we use Marc Andreessen's post - <a href="http://ebookbrowsee.net/marc-andreessen-on-why-software-is-eating-the-world-pdf-d265803950">Why Software Is Eating The World</a>, we learn that... <br><br>
+Anyone familiar with Ruby will no doubt be appalled by my undeniably fugly code.<br>
+In the end I didn't even use methods. But... it works :)<br><br> 
 
-words that occur more than 7 times:<br>
+If we use  - <a href="http://ebookbrowsee.net/marc-andreessen-on-why-software-is-eating-the-world-pdf-d265803950">Marc Andreessen's </a>post, we learn ... <br><br>
+
+Words that occur more than 7 times:<br>
 
 software 49 <br>
 companies 34<br>
@@ -175,9 +208,8 @@ the word count is 773 <br>
 software appears 49 times :)<br>
 the number of words that begin with a in this file are 1074<br><br>
 
-I realized that what I've done is actually the basis for making a wordcloud.<br><br>
-<img  id="mockup" src="assets/images/wordcloud.png"></a> 
-<span class="date">You can make you own <a href="http://www.wordle.net/">here</a></span></h2>
+I realized later that this is the basic premise that word clouds run on. You can experiement with you own <a href="http://www.wordle.net/">here</a></span>
+
 </p> 
 </article>
 <article>
